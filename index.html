@@ -1,79 +1,297 @@
-<pre>
-理念
-----
-つくり、磨き続ける。
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
-ハートレイルズは新しい価値を常に模索し、つくり、磨き続けます。
-ハートレイルズ自らがその理念を貫き、また、つくる人を支援することで、
-世の中に様々な価値を提供し、社会を豊かにします。
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" rel="stylesheet">
 
-
-目標
-----
-世界で最も信頼される開発会社になる。
-
-ハートレイルズは速く、上手く、良いサービスをつくることで信頼を積み重ね、
-その信頼を糧にさらに良いサービスをつくります。
-
-
-行動指針
-----
-- プロとしての自負と誇りを持って働く
-- HRT （謙虚、尊敬、信頼） を忘れない
-- 他責でなく自責を前提に考える
-- 失敗を次の成功に活かす
-- 変化を過度に恐れない
-- よく学び、よく遊ぶ
-
-
-開発指針
-----
-- 自律的に協働する
-- 手段に固執せず目的を重視する
-- QCD のバランスを意識する
-- 定型業務は自動化する
-- DRY、KISS、YAGNI、コードレビュー
-- 情報共有、状況の見える化にこだわる
-
-
-顧客対応指針
-----
-- 顧客との間に上下関係はない、対等な関係を前提に考える
-- 顧客は私達を信頼し期待している、その顧客のために全力を尽くす
-- 顧客と協働する、指示をこなすだけでなく、共に考え、提案し、期待以上の結果に導く
-- 顧客とのコミュニケーションを諦めない、妥協しない、互いに納得のいくまで話し合う
-- 顧客のビジネスに対して当事者意識を持つ、顧客の成功が私達の成功につながる
-
-
-採用指針
-----
-- なるべく多くのスタッフとの面談、技術試験 （2 週間 ～） を経るようにする
-- 一緒に気持ち良く働けそうかどうかを重視する
-- 細かい技巧よりも本質的な素養を持っているかどうかを重視する
-- 一度不採用となった人、一度退職した人の再応募をそれ以外の人と区別しない
-
-
-ツール
-----
-- Slack （コミュニケーション）
-- Google Apps （会議、ドキュメント、カレンダー）
-- GitHub （コード管理、タスク管理）
-- Jenkins、CircleCI （デプロイ管理）
-- Ruby on Rails、koa （フレームワーク）
-- Elixir、Go （注力言語）
-- AWS、GCP （インフラ）
-
-
-カルチャー
-----
-- リモートワークを前提にする
-　（異なる場所、異なる時間で働くことを許容する）
-- 振り返りミーティング
-　（個人、会社の KPT を定期的に話し合う）
-- 勉強会
-　（持ち回りで各自の学びを共有する）
-- リモート部活動
-　（料理部、筋肉部等）
-- プライベートを大事にする
-　（業務時間外の飲み会、休日の行事を催さない）
-</pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <title>HeartRails | ハートレイルズ | ザ・ウェブサービス・カンパニー</title>
+    <script>
+      $(function() {
+        var topBtn = $('.to-pagetop');
+        topBtn.hide();
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+        topBtn.click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 500);
+          return false;
+        });
+      });
+    </script>
+    <script src="https://apis.google.com/js/platform.js" async defer>
+      {lang: 'ja'}
+    </script>
+    <style>
+      <!--
+      .h2-wrap h2,
+      .h3-center .sub {
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-weight: bold;
+      }
+      -->
+    </style>
+  </head>
+  <body>
+    <div id="pagetop"></div>
+    <nav class="header">
+      <div class="header-container">
+        <div class="header-navbutton">
+          <button type="button" class="header-navbutton-button collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="header-navbutton-button-bar"></span>
+          </button>
+          <h1 class="brand">
+            <a href="#">HeartRails</a>
+          </h1>
+        </div>
+        <div id="navbar" class="header-navbar collapse">
+          <ul class="header-navbar-bar">
+            <li class="header-navbar-nav">
+              <a href="#philosophy">フィロソフィー</a>
+            </li>
+            <li class="header-navbar-nav">
+              <a href="#credo">行動指針</a>
+            </li>
+            <li class="header-navbar-nav">
+              <a href="#tool">ツール</a>
+            </li>
+            <li class="header-navbar-nav">
+              <a href="#culture">カルチャー</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="contents-wrap">
+      <div class="page">
+        <div class="h2-wrap">
+          <h2>To be the rails between your hearts.</h2>
+        </div>
+        <div id="philosophy" class="section">
+          <div class="container">
+            <div class="container-contents">
+              <div class="container-inner">
+                <h3 class="h3-center">フィロソフィー<span class="sub">Philosophy</span></h3>
+                <dl class="list-description">
+                  <dt>理念</dt>
+                  <dd>
+                    <p class="title-sub">つくり、磨き続ける。</p>
+                    <p>
+                      ハートレイルズは新しい価値を常に模索し、つくり、磨き続けます。<br />
+                      ハートレイルズ自らがその理念を貫き、また、つくる人を支援することで、<br />
+                      世の中に様々な価値を提供し、社会を豊かにします。
+                    </p>
+                  </dd>
+                </dl>
+                <dl class="list-description">
+                  <dt>目標</dt>
+                  <dd>
+                    <p class="title-sub">世界で最も信頼される開発会社になる。</p>
+                    <p>
+                      ハートレイルズは速く、上手く、良いサービスをつくることで信頼を積み重ね、<br />
+                      その信頼を糧にさらに良いサービスをつくります。
+                    </p>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="credo" class="section section-gray">
+          <div class="container">
+            <div class="container-contents">
+              <div class="container-inner">
+                <h3 class="h3-center">行動指針<span class="sub">Credo</span></h3>
+                <dl class="list-description">
+                  <dt>行動指針</dt>
+                  <dd>
+                    <ul class="list-arrow">
+                      <li>プロとしての自負と誇りを持って働く</li>
+                      <li>HRT （謙虚、尊敬、信頼） を忘れない</li>
+                      <li>他責でなく自責を前提に考える</li>
+                      <li>失敗を次の成功に活かす</li>
+                      <li>変化を過度に恐れない</li>
+                      <li>よく学び、よく遊ぶ</li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl class="list-description">
+                  <dt>開発指針</dt>
+                  <dd>
+                    <ul class="list-arrow">
+                      <li>自律的に協働する</li>
+                      <li>手段に固執せず目的を重視する</li>
+                      <li>QCD のバランスを意識する</li>
+                      <li>定型業務は自動化する</li>
+                      <li>DRY、KISS、YAGNI、コードレビュー</li>
+                      <li>情報共有、状況の見える化にこだわる</li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl class="list-description">
+                  <dt>顧客対応指針</dt>
+                  <dd>
+                    <ul class="list-arrow">
+                      <li>顧客との間に上下関係はない、対等な関係を前提に考える</li>
+                      <li>顧客は私達を信頼し期待している、その顧客のために全力を尽くす</li>
+                      <li>顧客と協働する、指示をこなすだけでなく、共に考え、提案し、期待以上の結果に導く</li>
+                      <li>顧客とのコミュニケーションを諦めない、妥協しない、互いに納得のいくまで話し合う</li>
+                      <li>顧客のビジネスに対して当事者意識を持つ、顧客の成功が私達の成功につながる</li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl class="list-description">
+                  <dt>採用指針</dt>
+                  <dd>
+                    <ul class="list-arrow">
+                      <li>なるべく多くのスタッフとの面談、技術試験 （2 週間 ～） を経るようにする</li>
+                      <li>一緒に気持ち良く働けそうかどうかを重視する</li>
+                      <li>細かい技巧よりも本質的な素養を持っているかどうかを重視する</li>
+                      <li>一度不採用となった人、一度退職した人の再応募をそれ以外の人と区別しない</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tool" class="section">
+          <div class="container">
+            <div class="container-contents">
+              <div class="container-inner">
+                <h3 class="h3-center">ツール<span class="sub">Tool</span></h3>
+                <dl class="list-description">
+                  <dt>ツール</dt>
+                  <dd>
+                    <ul class="list-arrow">
+                      <li>Slack （コミュニケーション）</li>
+                      <li>Google Apps （会議、ドキュメント、カレンダー）</li>
+                      <li>GitHub （コード管理、タスク管理）</li>
+                      <li>Jenkins、CircleCI （デプロイ管理）</li>
+                      <li>Ruby on Rails、koa （フレームワーク）</li>
+                      <li>Elixir、Go （注力言語）</li>
+                      <li>AWS、GCP （インフラ）</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="culture" class="section section-gray">
+          <div class="container">
+            <div class="container-contents">
+              <div class="container-inner">
+                <h3 class="h3-center">カルチャー<span class="sub">Culture</span></h3>
+                <dl class="list-description">
+                  <dt>カルチャー</dt>
+                  <dd>
+                    <ul class="list-arrow">
+                      <li>リモートワークを前提にする<br />（異なる場所、異なる時間で働くことを許容する）</li>
+                      <li>振り返りミーティング<br />（個人、会社の KPT を定期的に話し合う）</li>
+                      <li>勉強会<br />（持ち回りで各自の学びを共有する）</li>
+                      <li>リモート部活動<br />（料理部、筋肉部等）</li>
+                      <li>プライベートを大事にする<br />（業務時間外の飲み会、休日の行事を催さない）</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="to-pagetop">
+          <a class="to-pagetop-link" href="#pagetop"><span class="icon-arrow-top"></span></a>
+        </div>
+        <div class="contact">
+          <div class="container">
+            <div class="contact-left">
+              <p>
+                受託開発、システム提供 （アプライアンス、SaaS／ASP）、データ提供のご依頼は、お問い合わせにてお願いいたします。
+                まずは、綿密なヒアリング、コンサルテーションを通じて、ご依頼の内容に合わせたご提案を差し上げます。
+              </p>
+            </div>
+            <div class="contact-right">
+              <p class="text-center">
+                <a class="button button-contact" href="/contact">
+                  お問い合わせ
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sns">
+          <div class="container">
+            <ul class="sns-list">
+              <li class="sns-blog">
+                <a href="http://www.heartrails.com/">公式サイト</a>
+              </li>
+              <li class="sns-facebook">
+                <a href="https://www.facebook.com/HeartRails"><i class="icon-sns-facebook"></i></a>
+              </li>
+              <li class="sns-twitter">
+                <a href="https://twitter.com/heartrails"><i class="icon-sns-twitter"></i></a>
+              </li>
+              <li class="sns-qiita">
+                <a href="http://qiita.com/organizations/heartrails"><i class="icon-sns-qiita"></i></a>
+              </li>
+              <li class="sns-blog">
+                <a href="http://techblog.heartrails.com/">技術ブログ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-nav">
+           <ul>
+              <li><a href="company_profile.html">会社概要</a></li>
+              <li><a href="terms.html">利用規約</a></li>
+              <li><a href="security-policy.html">セキュリティポリシー</a></li>
+              <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+              <li><a href="disclaimer.html">免責事項</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </div>
+          <div class="footer-widget">
+            <div class="widget-facebook">
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHeartRails%2F&tabs&width=500px&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1075439855810052" width="500px" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+            <div class="widget-twitter">
+              <a class="twitter-timeline" data-lang="ja" data-width="240" data-height="214" href="https://twitter.com/heartrails">Tweets by heartrails</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+          <div class="footer-share">
+            <ul>
+              <li class="share-google">
+                <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120"></div>
+              </li>
+              <li class="share-twitter">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              </li>
+              <li class="share-facebook">
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FHeartRails&width=103&layout=button_count&action=like&show_faces=false&share=false&height=21&appId=1075439855810052" width="103" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>Copyright (C) HeartRails Inc. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
