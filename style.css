@@ -11021,8 +11021,14 @@ p {
 .footer .sns-list li a:hover i {
   opacity: 1;
 }
-.footer .sns-blog {
+.footer .sns-list .sns-blog {
+  display: block;
   vertical-align: top;
+}
+@media screen and (min-width: 768px) {
+  .footer .sns-list .sns-blog {
+    display: inline-block;
+  }
 }
 .footer .sns-blog a {
   display: inline-block;
@@ -11032,12 +11038,12 @@ p {
 .footer-links {
   overflow: hidden;
   margin: 0 auto;
-  padding: 30px 0 0;
+  padding: 10px 0 0;
   max-width: 800px;
 }
 @media screen and (min-width: 768px) {
   .footer-links {
-    padding: 60px 0 0;
+    padding: 0;
   }
 }
 .footer-nav {
@@ -11123,7 +11129,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .footer-share ul {
-    margin: 0 auto 60px;
+    margin: 0 auto 40px;
   }
 }
 .footer-share ul li {
@@ -12125,6 +12131,7 @@ p {
 }
 
 .h2-wrap {
+  background-image: url('./images/Image-42.png');
   background-color: #eaf3f2;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -12148,7 +12155,7 @@ p {
   z-index: 1;
 }
 .h2-wrap h2 {
-  color: #222;
+  color: #fff;
   letter-spacing: 2px;
   margin-bottom: 0;
   position: relative;
