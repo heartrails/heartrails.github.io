@@ -1389,7 +1389,7 @@ th {
 }
 
 html {
-  font-size: 10px;
+  font-size: 14px;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -10547,7 +10547,7 @@ a:focus, a:active {
 
 @media screen and (max-width: 767px) {
   .container-inner p, .container-inner li, .container-inner th, .container-inner td {
-    font-size: 12px;
+    font-size: 14x;
   }
 
   h1 {
