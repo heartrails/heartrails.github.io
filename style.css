@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -12131,7 +12131,6 @@ p {
 }
 
 .h2-wrap {
-  background-image: url('./images/Image-42.png');
   background-color: #eaf3f2;
   background-position: 50% 50%;
   background-repeat: no-repeat;
