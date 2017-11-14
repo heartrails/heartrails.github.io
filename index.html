@@ -40,10 +40,19 @@
     </script>
     <style>
       <!--
+      .en {
+        word-break: normal;
+      }
       .h2-wrap h2,
       .h3-center .sub {
-        font-family: 'Alegreya Sans SC', sans-serif;
         font-weight: bold;
+      }
+      h3 { font-size: 26pt; }
+      .container-inner p {
+        font-size: 14pt;
+      }
+      .list-description dt {
+        font-size: 20pt;
       }
       -->
     </style>
@@ -67,7 +76,7 @@
               <a href="#philosophy" data-toggle="collapse" data-target="#navbar.in">フィロソフィー</a>
             </li>
             <li class="header-navbar-nav">
-              <a href="#credo" data-toggle="collapse" data-target="#navbar.in">行動指針</a>
+              <a href="#credo" data-toggle="collapse" data-target="#navbar.in">クレド</a>
             </li>
             <li class="header-navbar-nav">
               <a href="#tool" data-toggle="collapse" data-target="#navbar.in">ツール</a>
@@ -82,7 +91,7 @@
     <div class="contents-wrap">
       <div class="page">
         <div class="h2-wrap" style="background-image: url('./images/index.png');">
-          <h2>Design a future that will empower different lifestyles.</h2>
+          <h2 class="en">Design a future that&nbsp;will&nbsp;empower different lifestyles.</h2>
         </div>
         <div id="philosophy" class="section">
           <div class="container">
@@ -126,7 +135,7 @@
           <div class="container">
             <div class="container-contents">
               <div class="container-inner">
-                <h3 class="h3-center">行動指針<span class="sub">Credo</span></h3>
+                <h3 class="h3-center">クレド<span class="sub">Credo</span></h3>
                 <dl class="list-description">
                   <dt>行動指針</dt>
                   <dd>
@@ -189,13 +198,18 @@
               <div class="container-inner">
                 <h3 class="h3-center">ツール<span class="sub">Tool</span></h3>
                 <dl class="list-description">
-                  <dt>ツール</dt>
+                  <dt>コミュニケーション</dt>
                   <dd>
                     <ul class="list-arrow">
                       <li>Slack （コミュニケーション）</li>
                       <li>Google Apps （メール、ドキュメント、カレンダー）</li>
                       <li>Zoom、appear.in （会議）</li>
                       <li>GitHub （ソースコード管理、タスク管理）</li>
+                    </ul>
+                  </dd>
+                  <dt>開発、インフラ</dt>
+                  <dd>
+                    <ul class="list-arrow">
                       <li>Jenkins、CircleCI （デプロイ管理）</li>
                       <li>Ruby on Rails、koa （サーバーサイドフレームワーク）</li>
                       <li>React、Vue.js （フロントエンドフレームワーク）</li>
@@ -215,12 +229,17 @@
               <div class="container-inner">
                 <h3 class="h3-center">カルチャー<span class="sub">Culture</span></h3>
                 <dl class="list-description">
-                  <dt>カルチャー</dt>
+                  <dt>リモート</dt>
                   <dd>
                     <ul class="list-arrow">
                       <li>リモートワークを前提にする<br />（異なる場所、異なる時間で働くことを許容する）</li>
                       <li>リモート勉強会<br />（隔週 ～、持ち回りで各自の学びを共有する）</li>
                       <li>リモート部活動<br />（随時 ～、英語部、料理部、マイクラ部、筋肉部など）</li>
+                    </ul>
+                  </dd>
+                  <dt>習慣</dt>
+                  <dd>
+                    <ul class="list-arrow">
                       <li>オフライン合宿<br />（年 2 回 ～、たまには顔を合わせる）</li>
                       <li>振り返りミーティング<br />（定期 ～、個人、会社の OKR、KPT を話し合う）</li>
                       <li>海外進出のための英語<br />（一部のミーティングは英語で、English Only Day など）</li>
