@@ -1,4 +1,21 @@
 ﻿@charset "UTF-8";
+
+.en {
+  word-break: normal;
+}
+.h2-wrap h2,
+.h3-center .sub {
+  font-weight: bold;
+}
+h3 { font-size: 26px; }
+.container-inner p, .container-inner li {
+  font-size: 14px;
+}
+.list-description dt {
+  font-size: 20px;
+}
+
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -10547,7 +10564,7 @@ a:focus, a:active {
 
 @media screen and (max-width: 767px) {
   .container-inner p, .container-inner li, .container-inner th, .container-inner td {
-    font-size: 12px;
+    /*font-size: 12px;*/
   }
 
   h1 {
@@ -11804,7 +11821,7 @@ p {
   overflow: hidden;
 }
 .list-description dt {
-  font-size: 26px;
+  /*font-size: 26px;*/
   font-weight: normal;
   margin: 0;
   padding: 20px 0;
