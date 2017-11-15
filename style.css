@@ -12152,7 +12152,8 @@ p {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 110px 10px 50px;
+  margin-top: 57px;
+  padding: 50px 10px;
   position: relative;
   text-align: center;
 }
@@ -12179,7 +12180,8 @@ p {
 }
 @media screen and (min-width: 768px) {
   .h2-wrap {
-    padding: 180px 0 110px;
+    margin-top: 70px;
+    padding: 110px 0;
   }
 }
 
