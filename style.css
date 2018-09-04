@@ -10968,6 +10968,7 @@ p {
 
 .footer {
   background: #eee;
+  background-size: cover;
   overflow: hidden;
 }
 .footer .contact {
@@ -11019,6 +11020,11 @@ p {
   padding: 0;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .footer .sns-list {
+    float: left;
+  }
+}
 .footer .sns-list li {
   display: inline-block;
   margin: 20px 20px 0;
@@ -11038,29 +11044,53 @@ p {
 .footer .sns-list li a:hover i {
   opacity: 1;
 }
-.footer .sns-list .sns-blog {
-  display: block;
+.footer .sns-blog {
   vertical-align: top;
-}
-@media screen and (min-width: 768px) {
-  .footer .sns-list .sns-blog {
-    display: inline-block;
-  }
 }
 .footer .sns-blog a {
   display: inline-block;
   height: 46px;
   padding: 10px 0 0;
 }
+.footer .sns .partner {
+  font-size: 11px;
+  margin: 10px 0 0;
+  line-height: 1.4;
+  text-align: center;
+}
+.footer .sns .partner span {
+  display: inline-block;
+  text-align: left;
+  padding: 15px 10px 0 0;
+}
+.footer .sns .partner img {
+  display: inline-block;
+  max-width: 100px;
+  margin: -20px 0 0;
+}
+@media screen and (min-width: 768px) {
+  .footer .sns .partner {
+    font-size: 13px;
+    float: right;
+    margin: 10px 0 0;
+  }
+  .footer .sns .partner span {
+    padding: 15px 20px 0 0;
+  }
+  .footer .sns .partner img {
+    margin: -20px 0 0;
+    max-width: 60px;
+  }
+}
 .footer-links {
   overflow: hidden;
   margin: 0 auto;
-  padding: 10px 0 0;
+  padding: 30px 0 0;
   max-width: 800px;
 }
 @media screen and (min-width: 768px) {
   .footer-links {
-    padding: 0;
+    padding: 50px 0 0;
   }
 }
 .footer-nav {
@@ -11110,7 +11140,7 @@ p {
 }
 .footer-widget {
   overflow: hidden;
-  margin: 30px auto 20px;
+  margin: 0 auto;
   text-align: center;
 }
 .footer-widget .widget-facebook, .footer-widget .widget-twitter {
@@ -11125,7 +11155,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .footer-widget {
-    margin: 60px auto 20px;
+    margin: 0 auto 20px;
   }
   .footer-widget .widget-facebook {
     float: left;
@@ -11139,7 +11169,7 @@ p {
 }
 .footer-share ul {
   list-style-type: none;
-  margin: 0 auto 30px;
+  margin: 0 auto 10px;
   overflow: hidden;
   padding: 0;
   text-align: center;
@@ -11180,7 +11210,7 @@ p {
   font-size: 18px;
   padding: 16px 12px 18px;
   position: fixed;
-  bottom: 50px;
+  bottom: 60px;
   right: 20px;
   text-decoration: none;
   z-index: 1000;
