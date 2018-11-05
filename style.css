@@ -5263,6 +5263,7 @@ tbody.collapse.in {
   color: #444;
 }
 
+
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;
@@ -11463,6 +11464,10 @@ p {
     position: absolute;
     top: 0;
     right: 20px;
+    padding: 0px;
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+    text-align: right;
   }
   .header .header-navbar .language a {
     color: #555;
