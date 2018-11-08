@@ -11139,13 +11139,13 @@ p {
 .footer-links {
   overflow: hidden;
   margin: 0 auto;
-  padding: 30px 0 0;
+  padding: 10px 0 0;
   max-width: 800px;
 }
 
 @media screen and (min-width: 768px) {
   .footer-links {
-    padding: 60px 0 0;
+    padding: 0;
   }
 }
 
@@ -11225,7 +11225,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .footer-widget {
-    margin: 60px auto 20px;
+    margin: 50px auto 20px;
   }
   .footer-widget .widget-facebook {
     float: left;
@@ -11247,7 +11247,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .footer-share ul {
-    margin: 0 auto 60px;
+    margin: 0 auto 40px;
   }
 }
 
@@ -11733,12 +11733,12 @@ p {
   font-weight: normal;
   line-height: 1;
   position: absolute;
-  top: 4px;
+  top: 5px;
   left: 0;
 }
 @media screen and (min-width: 768px) {
   .list-arrow li:before {
-    top: 7px;
+    top: 5px;
   }
 }
 .list-inline {
