@@ -9,6 +9,9 @@
     <meta property="fb:app_id" content="521857061194105" />
     <meta property="og:image" content="http://heartrails.github.io/images/index-og.jpg" />
 
+    <link rel="alternate" hreflang="ja" href="https://heartrails.github.io/">
+    <link rel="alternate" hreflang="en" href="https://heartrails.github.io/en/">
+
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" rel="stylesheet" />
 
@@ -16,25 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <title>HeartRails - ハートレイルズ - Ruby on Rails や React、iOS／Android 開発に長けた、新規事業に特化した開発会社</title>
-    <script>
-      $(function() {
-        var topBtn = $('.to-pagetop');
-        topBtn.hide();
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-            topBtn.fadeIn();
-          } else {
-            topBtn.fadeOut();
-          }
-        });
-        topBtn.click(function () {
-          $('body,html').animate({
-            scrollTop: 0
-          }, 500);
-          return false;
-        });
-      });
-    </script>
+    <script src="javascripts/common.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer>
       {lang: 'ja'}
     </script>
@@ -67,6 +52,10 @@
               <a href="#culture" data-toggle="collapse" data-target="#navbar.in">カルチャー</a>
             </li>
           </ul>
+          <div class="language">
+            <span class="selected">日本語</span>
+            <span><a href="/en/">English</a></span>
+          </div>
         </div>
       </div>
     </nav>

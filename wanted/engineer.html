@@ -11,6 +11,9 @@
     <meta property="fb:app_id" content="521857061194105" />
     <meta property="og:image" content="http://heartrails.github.io/images/engineer-og.jpg" />
 
+    <link rel="alternate" hreflang="ja" href="https://heartrails.github.io/wanted/engineer">
+    <link rel="alternate" hreflang="en" href="https://heartrails.github.io/en/wanted/engineer">
+
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" rel="stylesheet" />
 
@@ -18,25 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <title>開発を一生の仕事にしたいエンジニアを大募集！ - ハートレイルズ</title>
-    <script>
-      $(function() {
-        var topBtn = $('.to-pagetop');
-        topBtn.hide();
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-            topBtn.fadeIn();
-          } else {
-            topBtn.fadeOut();
-          }
-        });
-        topBtn.click(function () {
-          $('body,html').animate({
-            scrollTop: 0
-          }, 500);
-          return false;
-        });
-      });
-    </script>
+    <script src="/javascripts/common.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer>
       {lang: 'ja'}
     </script>
@@ -69,6 +54,10 @@
               <a href="wanted/engineer#treatment" data-toggle="collapse" data-target="#navbar.in">待遇</a>
             </li>
           </ul>
+          <div class="language">
+            <span class="selected">日本語</span>
+            <span><a href="/en/wanted/engineer">English</a></span>
+          </div>
         </div>
       </div>
     </nav>
