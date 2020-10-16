@@ -11063,12 +11063,6 @@ p {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .footer .sns-list {
-    float: left;
-  }
-}
-
 .footer .sns-list li {
   display: inline-block;
   margin: 20px 20px 0;
@@ -11101,40 +11095,6 @@ p {
   display: inline-block;
   height: 46px;
   padding: 10px 0 0;
-}
-
-.footer .sns .partner {
-  font-size: 11px;
-  margin: 10px 0 0;
-  line-height: 1.4;
-  text-align: center;
-}
-
-.footer .sns .partner span {
-  display: inline-block;
-  text-align: left;
-  padding: 15px 10px 0 0;
-}
-
-.footer .sns .partner img {
-  display: inline-block;
-  max-width: 100px;
-  margin: -20px 0 0;
-}
-
-@media screen and (min-width: 768px) {
-  .footer .sns .partner {
-    font-size: 13px;
-    float: right;
-    margin: 10px 0 0;
-  }
-  .footer .sns .partner span {
-    padding: 15px 20px 0 0;
-  }
-  .footer .sns .partner img {
-    margin: -20px 0 0;
-    max-width: 60px;
-  }
 }
 
 .footer-links {
